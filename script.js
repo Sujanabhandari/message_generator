@@ -13,9 +13,10 @@ const message_generator = () => message_array.map(() =>{
     console.log(message_array)
     //The Math.floor() function returns the largest integer less than or equal to a given number.
     let randomMessage = Math.floor(Math.random() * message_array.length);
-    console.log(message_array.length)
-    return (document.querySelector("#messages").innerHTML = 
-      message_array[randomMessage].author + " : " + message_array[randomMessage].message);
+  return (document.querySelector("#messages").innerHTML =
+    message_array[randomMessage].author +
+    " : " +
+    message_array[randomMessage].message);
   }) 
 // message_generator()
 console.log(message_generator);
